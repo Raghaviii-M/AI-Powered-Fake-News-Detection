@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>AI Fake News Detector</title>
+
+<link rel="stylesheet" href="style.css">
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>AI Fake News Detection Dashboard</h1>
+
+<textarea id="newsText" placeholder="Paste news article here"></textarea>
+
+<button onclick="checkNews()">Analyze News</button>
+<hr> <hr>
+<h2 id="prediction"></h2>
+
+<h3>Fake News Probability Meter</h3>
+
+<div class="meter">
+<div id="fakeMeter"></div>
+</div>
+
+<p id="fakePercent"></p>
+
+<h3>Prediction Chart</h3>
+
+<canvas id="resultChart"></canvas>
+
+<h3>AI Explanation</h3>
+
+<p id="explanation"></p>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
